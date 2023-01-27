@@ -1,0 +1,39 @@
+main{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.image__container{
+    height: 555px;
+}
+.card{
+    left: 65%;
+    top: 79%;
+
+}
+.header__hamburger{
+    display: none;
+}
+.header__nav{
+    width: 20%;
+    height: 22px;
+    margin-right: 76px;
+}
+.header__nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav li{
+    list-style: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+}
+.header__nav li:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}

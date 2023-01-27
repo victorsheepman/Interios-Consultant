@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./tablet/tablet.css" media="(min-width: 1024px)">
+    <link rel="stylesheet" href="./tablet/desktop.css" media="(min-width: 1366px)">
+</head>
+<body>
+    <header class="header">
+       <div class="header__logo">
+           <p>Netflix</p>
+       </div> 
+       <nav class="header__nav">
+            <ul>
+                <li>Home</li>
+                <li>Collection</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+       </nav>
+       <span class="header__hamburger" id="hamburguer"></span>
+    </header>
+    <div class="modal" id="modal">
+        <a href="#" id="exit">Exit</a>
+        <nav class="modal__nav">
+            <ul>
+                <li>Home</li>
+                <li>Collection</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+       </nav>
+    </div> 
+    <main>
+        <div class="body">
+            <div class="body__title">
+                <h1>Modern interior</h1>
+            </div>
+            <div class="body__description">
+                <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+            </div>
+            <div class="body__link"><a href="#">Read more</a></div>
+        </div>
+        <div class="image__container">
+            <div class="card">
+                <div class="card__header">
+                    <span></span>
+                    <div class="card__title">
+                        <h3>Aliza Webber</h3>
+                        <p>Interior designer</p>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <h2>Designed in 2020 by Aliza Webber</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const $hamburguer = document.querySelector('#hamburguer');
+        let $modal = document.querySelector('#modal');
+        const $exit = document.querySelector('#exit');
+        debugger
+
+        $hamburguer.onclick = ()=>{
+            $modal.style.display='block';
+        };
+        $exit.onclick = ()=>{
+            debugger
+            console.log('hola');
+            $modal.style.display='none';
+        }
+      
+    </script>
+</body>
+</html>

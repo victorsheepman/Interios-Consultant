@@ -1,0 +1,13 @@
+main{
+    align-items: center;
+}
+.card{
+    left: 40%;
+}
+.body__title h1{
+    font-size: 3rem;
+    line-height: 3.84rem;
+}
+.body__description p {
+    font-size: 1rem;
+}
